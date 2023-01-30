@@ -69,8 +69,8 @@ Git為分散式版本控制系統，為了更好管理Linux內核而開發
 
 ### **5.分支的使用方法**
 
-透過 git branch 指令得知已經擁有的分支
-透過git checkout -b [BranchName]指令建立分支，並將目前工作目錄切換到新的分支
+透過 `git branch` 指令得知已經擁有的分支  
+透過 `git checkout -b [BranchName]` 指令建立分支，並將目前工作目錄切換到新的分支
 以下為分支其他的常用指令
 
 | 指令 | 功能 |
@@ -87,8 +87,8 @@ Git為分散式版本控制系統，為了更好管理Linux內核而開發
 
 ### **6.Commit 介紹及使用**
 
->`git commit` ：將暫存區的檔案提交到儲存庫儲存  
->`git commit -m "修改記錄"`：說明這次的 commit 做了什麼事
+`git commit` ：將暫存區的檔案提交到儲存庫儲存  
+`git commit -m "修改記錄"`：說明這次的 commit 做了什麼事
 
 #### **使用 git commit 指令一定要加上 -m"修改紀錄“ 訊息**
 
@@ -104,10 +104,10 @@ Git flow是最早出現的一套流程，且廣泛被應用。
 Git flow 提出不同的分支功能，分別有 master、develop 、hotfix、release、feature 五種分支。  
 而這五個分支，根據他們的性質，又有其他稱法：
 
-#### **長期分支 - master 分支、develop 分支**
+- #### **長期分支 - master 分支、develop 分支**
 
 原因：因 Master 與 Develop 分支會一直存活在整個 Git flow 裡，並不會被刪除掉。
 
-#### **短期分支 - hotfix 分支、release 分支、feature 分支**
+- #### **短期分支 - hotfix 分支、release 分支、feature 分支**
 
 原因：當完成專案後，這些更新的版本都會被合併進 Master 或 Develop 分支 ，之後就會被刪除掉。
